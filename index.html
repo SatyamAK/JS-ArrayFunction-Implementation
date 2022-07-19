@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Implementation Some of the inbuilt JS functions Manually</title>
+</head>
+<body>
+    
+    <header>
+        <h1>ArrayHub</h1>
+    </header>
+    <nav class="navbar">
+        <span class="inactive" id="inbuiltTab" onclick="setPageAsActive('inbuiltTab')">Inbuilt</span>
+        <span class="inactive" id="manualTab" onclick="setPageAsActive('manualTab')">Manual</span>
+    </nav>
+    <h2>Base Array</h2>
+    <div id="base-array"></div>
+
+    <div id = "inbuilt">
+        <h2>Output using inbuilt array functions</h2>
+
+        <h3>Map</h3>
+        <div class="problem-statement">Using Map function to add 2 to each elements</div>
+        <div id="inbuilt-map" class="solution"></div>
+
+        <h3>Filter</h3>
+        <div class="problem-statement">Using Filter function to filter array elements divisible by 5</div>
+        <div id="inbuilt-filter" class="solution"></div>
+
+        <h3>Reduce</h3>
+        <div class="problem-statement">Using Reduce function to add all elements and adding 2 to the result</div>
+        <div id="inbuilt-reduce" class="solution"></div>
+    </div>
+
+    <div id="manual">
+        <h2>Output using Manually defined array functions</h2>
+
+        <h3>Map</h3>
+        <div class="problem-statement">Using Map function to add 2 to each elements</div>
+        <div id="map" class="solution"></div>
+
+        <h3>Filter</h3>
+        <div class="problem-statement">Using Filter function to filter array elements divisible by 5</div>
+        <div id="filter" class="solution"></div>
+
+        <h3>Reduce</h3>
+        <div class="problem-statement">Using Reduce function to add all elements and adding 2 to the result</div>
+        <div id="reduce" class="solution"></div>
+    </div>
+
+    <script src="./arrayUtils.js"></script>
+</body>
+</html>
