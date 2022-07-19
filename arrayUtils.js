@@ -67,6 +67,18 @@ document.getElementById("inbuilt-reduce").innerHTML = reducedTotal
 let myReducedTotal = myReduceFunction(baseArray, (total, num)=>total + num, 9)
 document.getElementById("reduce").innerHTML = myReducedTotal
 
+var inbuiltForEach = document.getElementById("inbuilt-foreach-container")
+
+baseArray.forEach((num)=> {
+    inbuiltForEach.appendChild(document.createTextNode(num-3+' '))
+})
+
+var forEach = document.getElementById("foreach-container")
+
+myForEachFunction(baseArray, (num)=> {
+    forEach.appendChild(document.createTextNode(num-3+' '))
+})
+
 function setPageAsActive(whichTabIsActive){
 
     document.getElementById("inbuiltTab").className = "inactive"
@@ -86,19 +98,3 @@ function setPageAsActive(whichTabIsActive){
 }
 
 setPageAsActive("inbuiltTab")
-// console.log('Base Array: '+ baseArray)
-
-// console.log('Output of inbuilt map array function '+ mappedArray)
-// console.log('Output of manually built map array function '+ myMappedArray)
-
-// console.log('Output of inbuilt filter array function '+ filteredArray)
-// console.log('Output of manually built filter array function '+ myFilteredArray)
-
-// console.log('Output of inbuilt reduce array function '+ reducedTotal)
-// console.log('Output of manually built reduce array function '+ myReducedTotal)
-
-// console.log('In built forEach function: -')
-// baseArray.forEach((num)=> console.log(num-3))
-
-// console.log('Manually built forEach function: -')
-// myForEachFunction(baseArray, (num)=> console.log(num-3))
